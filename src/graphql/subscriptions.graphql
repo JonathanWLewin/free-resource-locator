@@ -1,0 +1,67 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateResource($filter: ModelSubscriptionResourceFilterInput) {
+  onCreateResource(filter: $filter) {
+    id
+    owner
+    user
+    product
+    resource_link
+    average_rating
+    rating_count
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateResource($filter: ModelSubscriptionResourceFilterInput) {
+  onUpdateResource(filter: $filter) {
+    id
+    owner
+    user
+    product
+    resource_link
+    average_rating
+    rating_count
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteResource($filter: ModelSubscriptionResourceFilterInput) {
+  onDeleteResource(filter: $filter) {
+    id
+    owner
+    user
+    product
+    resource_link
+    average_rating
+    rating_count
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateProduct($filter: ModelSubscriptionProductFilterInput) {
+  onCreateProduct(filter: $filter) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateProduct($filter: ModelSubscriptionProductFilterInput) {
+  onUpdateProduct(filter: $filter) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteProduct($filter: ModelSubscriptionProductFilterInput) {
+  onDeleteProduct(filter: $filter) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}

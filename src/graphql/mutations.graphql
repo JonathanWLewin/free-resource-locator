@@ -1,0 +1,85 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateResource(
+  $input: CreateResourceInput!
+  $condition: ModelResourceConditionInput
+) {
+  createResource(input: $input, condition: $condition) {
+    id
+    owner
+    user
+    product
+    resource_link
+    average_rating
+    rating_count
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateResource(
+  $input: UpdateResourceInput!
+  $condition: ModelResourceConditionInput
+) {
+  updateResource(input: $input, condition: $condition) {
+    id
+    owner
+    user
+    product
+    resource_link
+    average_rating
+    rating_count
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteResource(
+  $input: DeleteResourceInput!
+  $condition: ModelResourceConditionInput
+) {
+  deleteResource(input: $input, condition: $condition) {
+    id
+    owner
+    user
+    product
+    resource_link
+    average_rating
+    rating_count
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateProduct(
+  $input: CreateProductInput!
+  $condition: ModelProductConditionInput
+) {
+  createProduct(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateProduct(
+  $input: UpdateProductInput!
+  $condition: ModelProductConditionInput
+) {
+  updateProduct(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteProduct(
+  $input: DeleteProductInput!
+  $condition: ModelProductConditionInput
+) {
+  deleteProduct(input: $input, condition: $condition) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}

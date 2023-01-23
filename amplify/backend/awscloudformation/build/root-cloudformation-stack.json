@@ -152,6 +152,26 @@
         }
       }
     },
+    "apifreeresourcelocator": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify91635b1ae2a94-staging-04844-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "AppSyncApiName": "freeresourcelocator",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "AuthCognitoUserPoolId": {
+            "Fn::GetAtt": [
+              "authfreeresourcelocator",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "S3DeploymentBucket": "amplify-amplify91635b1ae2a94-staging-04844-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/0a95f52dc2c4f0133fba3de0eec62c63c7846f0f",
+          "env": "staging"
+        }
+      }
+    },
     "authfreeresourcelocator": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
@@ -206,26 +226,6 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
-          "env": "staging"
-        }
-      }
-    },
-    "apifreeresourcelocator": {
-      "Type": "AWS::CloudFormation::Stack",
-      "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify91635b1ae2a94-staging-04844-deployment/amplify-cfn-templates/api/cloudformation-template.json",
-        "Parameters": {
-          "AppSyncApiName": "freeresourcelocator",
-          "DynamoDBBillingMode": "PAY_PER_REQUEST",
-          "DynamoDBEnableServerSideEncryption": false,
-          "AuthCognitoUserPoolId": {
-            "Fn::GetAtt": [
-              "authfreeresourcelocator",
-              "Outputs.UserPoolId"
-            ]
-          },
-          "S3DeploymentBucket": "amplify-amplify91635b1ae2a94-staging-04844-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/daaf210488187bd10c44f37d82d5a7f0e4707cf8",
           "env": "staging"
         }
       }

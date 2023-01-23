@@ -30,9 +30,44 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "@aws-crypto/crc32",
+              "@aws-crypto/sha256-browser",
+              "@aws-crypto/sha256-js",
+              "crypto-js/sha256",
+              "axios",
+              "buffer",
+              "camelcase-keys",
+              "crypto-js/core",
+              "crypto-js/enc-base64",
+              "crypto-js/hmac-sha256",
+              "crypto-js/lib-typedarrays",
+              "fast-xml-parser",
+              "isomorphic-unfetch",
+              "js-cookie",
+              "lodash",
+              "lodash/get",
+              "lodash/isEmpty",
+              "lodash/isEqual",
+              "qrcode",
+              "style-dictionary/lib/utils/deepExtend",
+              "style-dictionary/lib/utils/flattenProperties",
+              "style-dictionary/lib/utils/references/usesReference",
+              "ulid",
+              "url",
+              "uuid",
+              "xstate/lib/actions",
+              "zen-observable",
+              "cookie",
+              "classnames",
+              "xstate/lib/waitFor"
+            ]
           },
           "configurations": {
             "production": {
@@ -93,6 +128,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -100,5 +138,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ec2ebbd9-50e9-4463-9c71-977314e650cd"
   }
 }

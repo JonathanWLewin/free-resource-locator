@@ -12,6 +12,40 @@
       "AmplifyAppId": "d31ihit2hu5st9"
     }
   },
+  "api": {
+    "freeresourcelocator": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "auth",
+          "resourceName": "freeresourcelocator",
+          "attributes": [
+            "UserPoolId"
+          ]
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authfreeresourcelocator"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "d7c244elhveqdbz76hj7qtzgai",
+        "GraphQLAPIEndpointOutput": "https://auzon5iq2rhy7l3f2i3q3sbpcy.appsync-api.us-east-2.amazonaws.com/graphql"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify91635b1ae2a94-staging-04844-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apifreeresourcelocator"
+      },
+      "lastPushTimeStamp": "2023-01-23T05:21:00.387Z",
+      "lastPushDirHash": "N/XEHC3OA450JVsr3l5xDyPxdtw="
+    }
+  },
   "auth": {
     "freeresourcelocator": {
       "customAuth": false,
@@ -52,45 +86,11 @@
         "IdentityPoolName": "testAuthIdentityPool__staging",
         "UserPoolName": "freeresourcelocator"
       },
-      "lastPushTimeStamp": "2023-01-23T02:09:13.751Z",
+      "lastPushTimeStamp": "2023-01-23T05:20:56.204Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify91635b1ae2a94-staging-04844-deployment/amplify-cfn-templates/auth/freeresourcelocator-cloudformation-template.json",
         "logicalId": "authfreeresourcelocator"
       }
-    }
-  },
-  "api": {
-    "freeresourcelocator": {
-      "service": "AppSync",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "auth",
-          "resourceName": "freeresourcelocator",
-          "attributes": [
-            "UserPoolId"
-          ]
-        }
-      ],
-      "output": {
-        "authConfig": {
-          "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authfreeresourcelocator"
-            }
-          },
-          "additionalAuthenticationProviders": []
-        },
-        "GraphQLAPIIdOutput": "htf4pzuervdi7j3yfy5exwwlua",
-        "GraphQLAPIEndpointOutput": "https://rsclluirdnhtzjtepzindpgfry.appsync-api.us-east-2.amazonaws.com/graphql"
-      },
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify91635b1ae2a94-staging-04844-deployment/amplify-cfn-templates/api/cloudformation-template.json",
-        "logicalId": "apifreeresourcelocator"
-      },
-      "lastPushTimeStamp": "2023-01-23T02:09:17.925Z",
-      "lastPushDirHash": "K8tYfvTpzL3DijxDyITSC5LemqE="
     }
   }
 }
