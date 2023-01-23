@@ -10,3 +10,6 @@ projects:
         codeGenTarget: angular
         generatedFileName: src/app/resource-service.ts
         docsFilePath: src/graphql
+extensions:
+  amplify:
+    version: 3

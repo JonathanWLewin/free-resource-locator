@@ -4,6 +4,7 @@ subscription OnCreateResource($filter: ModelSubscriptionResourceFilterInput) {
     id
     owner
     username
+    product
     resource_link
     average_rating
     rating_count
@@ -16,6 +17,7 @@ subscription OnUpdateResource($filter: ModelSubscriptionResourceFilterInput) {
     id
     owner
     username
+    product
     resource_link
     average_rating
     rating_count
@@ -28,9 +30,37 @@ subscription OnDeleteResource($filter: ModelSubscriptionResourceFilterInput) {
     id
     owner
     username
+    product
     resource_link
     average_rating
     rating_count
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateProduct($filter: ModelSubscriptionProductFilterInput) {
+  onCreateProduct(filter: $filter) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateProduct($filter: ModelSubscriptionProductFilterInput) {
+  onUpdateProduct(filter: $filter) {
+    id
+    name
+    tags
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteProduct($filter: ModelSubscriptionProductFilterInput) {
+  onDeleteProduct(filter: $filter) {
+    id
+    name
+    tags
     createdAt
     updatedAt
   }

@@ -52,7 +52,7 @@
         "IdentityPoolName": "testAuthIdentityPool__staging",
         "UserPoolName": "freeresourcelocator"
       },
-      "lastPushTimeStamp": "2023-01-23T01:34:50.781Z",
+      "lastPushTimeStamp": "2023-01-23T02:09:13.751Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify91635b1ae2a94-staging-04844-deployment/amplify-cfn-templates/auth/freeresourcelocator-cloudformation-template.json",
         "logicalId": "authfreeresourcelocator"
@@ -89,8 +89,8 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplify91635b1ae2a94-staging-04844-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apifreeresourcelocator"
       },
-      "lastPushTimeStamp": "2023-01-23T01:34:53.349Z",
-      "lastPushDirHash": "aS4bZ5opbpT9FeYYXAjXCtA/864="
+      "lastPushTimeStamp": "2023-01-23T02:09:17.925Z",
+      "lastPushDirHash": "K8tYfvTpzL3DijxDyITSC5LemqE="
     }
   }
 }
